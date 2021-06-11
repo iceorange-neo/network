@@ -9,6 +9,8 @@ import java.net.Socket;
 // 客户端上传
 public class FileUploadClient {
     public static void main(String[] args) throws IOException {
+
+        // 获得服务器端的主机ip
         InetAddress serverIp = InetAddress.getByName("localhost");
         int port = 9000;
         // 1、与指定主机的端口建立socket连接
