@@ -6,11 +6,9 @@ import java.net.*;
 public class TalkSend implements Runnable {
     private DatagramSocket socket = null;
     BufferedReader reader = null;
-
     private int fromPort;
     private String toIp;
     private int toPort;
-
     public TalkSend(int fromPort, String toIp, int toPort) {
         this.fromPort = fromPort;
         this.toIp = toIp;
@@ -23,8 +21,6 @@ public class TalkSend implements Runnable {
         }
 
     }
-
-
     @Override
     public void run(){
         while(true){
